@@ -1,0 +1,36 @@
+agent_id,date,violation,details
+AGT-012,2026-09-02,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-020,2026-09-02,VIOLATION_DUPLICATE_PUNCH,Multiple punch records for one agent and date
+AGT-006,2026-09-03,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-010,2026-09-03,VIOLATION_DAILY,Worked 9.02 hours; maximum payable hours are 9
+AGT-022,2026-09-03,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-006,2026-09-04,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-014,2026-09-04,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-016,2026-09-04,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-012,2026-09-05,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-015,2026-09-05,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-017,2026-09-06,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-013,2026-09-08,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-028,2026-09-08,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-005,2026-09-09,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-012,2026-09-09,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-015,2026-09-09,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-001,2026-09-10,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-004,2026-09-10,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-016,2026-09-10,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-028,2026-09-10,VIOLATION_DAILY,Worked 9.10 hours; maximum payable hours are 9
+AGT-002,2026-09-11,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-013,2026-09-11,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-001,2026-09-12,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-002,2026-09-12,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-026,2026-09-12,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-026,2026-09-12,VIOLATION_QUARTERLY_OT,5.50 overtime hours exceeded the quarterly 125-hour cap
+AGT-007,2026-09-13,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-011,2026-09-13,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-014,2026-09-13,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-011,2026-09-15,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-024,2026-09-15,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-029,2026-09-16,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-001,2026-09-17,VIOLATION_SHIFT_MISMATCH,Punch-in occurred at or after scheduled shift end
+AGT-027,2026-09-17,VIOLATION_NO_ROSTER,Punch recorded without a scheduled shift
+AGT-015,2026-09-20,VIOLATION_INVALID_PUNCH,Punch-out must be after punch-in
