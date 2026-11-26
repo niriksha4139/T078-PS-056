@@ -102,8 +102,7 @@ Watch our five-minute project demonstration here:
 [Click here to watch the Project Demo Video](https://drive.google.com/file/d/14bcrnxARexc18aJ7dXrkirWyfdW67MjY/view?usp=drivesdk)
 ## Documents
 
-- **Design Document:** [View Design Document](docs/design.pdf)
-- **Decision Log:** [View Decision Log](docs/decision-log.md)
+[View Decision Log](docs/docs/decision-log.md)
 
 ## Project Repository
 
