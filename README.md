@@ -1,67 +1,40 @@
-﻿# T078-PS-056 — Shift Roster and Overtime Engine
+# T078-PS-056: Shift Roster and Overtime Engine with Labour-Law Hours and Swaps
 
-## Project Overview
+This project is a Python-based backend engine that automates employee shift scheduling and workforce management. It generates employee rosters, processes shift swap requests, checks attendance records, identifies scheduling and labour-hour related issues, and calculates monthly allowances.
 
-The Shift Roster and Overtime Engine is a Python-based command-line application designed to manage employee shift scheduling, attendance, overtime, shift swaps and monthly allowances.
+The project reads employee, shift, demand, punch and other input data from CSV files and generates structured output reports.
 
-The system processes employee and shift data, generates monthly rosters, validates shift swaps, calculates working hours and overtime, identifies attendance violations and prepares monthly allowance reports.
+**Team T078:**
+- Niriksha N (1AT24CG056)
+- Neeha Taj (1AT24CG055)
 
-## Features
+## What it does
 
-- Monthly employee roster generation.
-- Shift allocation based on employee and demand data.
-- Shift swap request processing and validation.
-- Attendance and punch-in/punch-out processing.
-- Calculation of regular working hours and overtime.
-- Night working-hour calculation.
-- Detection and reporting of attendance and labour-rule violations.
-- Calculation of overtime pay, night allowance, weekly-off premium and meal allowance.
-- CSV-based input and output reports.
+The engine performs four main operations:
 
-## Technologies Used
-
-- Python 3
-- CSV file handling
-- Python standard library
-- Visual Studio Code
-
-## Project Structure
-
-```text
-T078-PS-056/
-├── data/
-├── output/
-├── src/
-│   ├── main.py
-│   ├── roster.py
-│   ├── io_utils.py
-│   ├── punches.py
-│   ├── allowances.py
-│   └── swaps.py
-├── tests/
-├── T078-PS-056-sample-data/
-├── README.md
-└── .gitignore
-```
+1. **Shift Roster Generation:** Creates employee shift schedules based on staffing requirements and scheduling rules, including weekly offs.
+2. **Shift Swap Processing:** Validates employee shift swap requests and records approved or rejected requests.
+3. **Attendance and Punch Processing:** Processes employee punch-in and punch-out records and identifies attendance-related issues.
+4. **Monthly Allowance Calculation:** Calculates employee monthly allowances based on the available shift and work information.
 
 ## Requirements
 
-- Python 3.10 or later.
-- Visual Studio Code or any Python-compatible editor.
+- Python 3.13
+- Windows or any system with Python installed.
 
-No third-party Python packages are currently required.
+## How to run
 
-## How to Run
-
-Open PowerShell in the project root directory.
-
-Run the complete project for September 2026:
+Open the project folder in the terminal and execute:
 
 ```bash
 py -m src.main --month 2026-09
 ```
 
-## Run Unit Tests
+Here, `2026-09` represents September 2026.
+
+The program executes the different stages of the engine and generates the output reports inside the `output` folder.
+
+## How to run the tests
 
 Execute the following command:
 
@@ -69,36 +42,65 @@ Execute the following command:
 py -m unittest discover -s tests -v
 ```
 
-## Input Files
+The project currently has 11 tests that pass successfully.
 
-The application uses CSV files stored in the `data/` directory, including:
+## Output files
 
-- agents.csv
-- shifts.csv
-- demand.csv
-- punches.csv
-- commands.txt
-- prior_week_hours.csv
+The project generates five output reports:
 
-## Generated Output Files
-
-The application generates the following reports in the `output/` directory:
-
-| File | Description |
+| File | What it contains |
 |---|---|
-| roster.csv | Monthly employee shift roster |
-| swap_results.csv | Shift swap processing results |
-| punch_results.csv | Employee attendance and working-hour results |
-| violations.csv | Detected attendance and rule violations |
-| monthly_allowances.csv | Monthly employee allowance statement |
+| roster.csv | Employee shift schedules, weekly offs and staffing shortfalls |
+| swap_results.csv | Approved and rejected employee shift swap requests |
+| punch_results.csv | Processed employee attendance and punch records |
+| violations.csv | Scheduling, attendance and labour-hour related issues identified during processing |
+| monthly_allowances.csv | Monthly allowance calculation details for employees |
 
-## Testing and Execution Status
+## Project layout
 
-- Unit tests executed successfully: 11 passed.
-- Monthly roster generation completed.
-- Shift swap processing completed.
-- Attendance and punch processing completed.
-- Monthly allowance calculation completed.
-- All five output CSV reports generated successfully.
+| Path | Purpose |
+|---|---|
+| src/main.py | Main starting point that runs the project |
+| src/roster.py | Generates employee shift rosters |
+| src/io_utils.py | Handles input and output file operations |
+| src/punches.py | Processes attendance and punch records |
+| src/allowances.py | Calculates monthly employee allowances |
+| src/swaps.py | Processes and validates shift swap requests |
+| data/ | Contains input CSV files |
+| output/ | Stores the generated reports |
+| tests/ | Contains project test cases |
+| T078-PS-056-sample-data/ | Contains the provided sample data |
+| README.md | Project documentation |
 
-The project has a working end-to-end processing pipeline. The existing unit tests cover selected roster and punch calculation functions; further testing of all business rules and edge cases may still be required.
+## Input files
+
+The project uses the following input files:
+
+- `agents.csv` – Employee information.
+- `shifts.csv` – Available shift details.
+- `demand.csv` – Staffing requirements.
+- `punches.csv` – Employee attendance and punch records.
+- `commands.txt` – Shift swap and processing commands.
+- `prior_week_hours.csv` – Previous weekly working-hour information.
+
+## Main features
+
+- Automated employee shift roster generation.
+- Weekly off management.
+- Staffing shortage identification.
+- Employee shift swap validation.
+- Attendance and punch record processing.
+- Identification of invalid and duplicate punch records.
+- Labour-hour and scheduling violation detection.
+- Monthly allowance calculation.
+- Automatic generation of structured CSV reports.
+
+## Project Demo Video
+
+Watch our five-minute project demonstration here:
+
+[Click here to watch the Project Demo Video](https://drive.google.com/file/d/14bcrnxARexc18aJ7dXrkirWyfdW67MjY/view?usp=drivesdk)
+
+## Project Repository
+
+[GitHub Repository – T078-PS-056](https://github.com/niriksha4139/T078-PS-056)
