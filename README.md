@@ -104,6 +104,7 @@ Watch our five-minute project demonstration here:
 
 [View Decision Log](docs/docs/decision-log.md)
 [View Design Document](docs/design.md)
+[View Design PDF](docs/Shift_Roster_and_Overtime_Engine_Design_Document.pdf)
 
 ## Project Repository
 
