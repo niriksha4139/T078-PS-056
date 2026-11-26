@@ -103,6 +103,7 @@ Watch our five-minute project demonstration here:
 ## Documents
 
 [View Decision Log](docs/docs/decision-log.md)
+[View Design Document](docs/design.md)
 
 ## Project Repository
 
